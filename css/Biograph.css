@@ -1,3 +1,6 @@
+body{
+	background-color: #D1DCB2;
+}
 .container{
 	width: 1680px;
 	margin:0 auto;
@@ -34,9 +37,10 @@ a {
 .borders{
 	border: 3px solid black;
 	border-bottom: 0px;
+	border-radius: 10px;
 }
 .header{
-	padding-bottom: 20vw;
+	
 }
 .border-bottom{
 	border-bottom: 3px solid black;
@@ -65,5 +69,10 @@ a {
 .button{
 	display: flex;
 	justify-content: center;
-	margin-top: 5vw;
+	margin-top: 3vw;
+	width: 100px;
+}
+.center{
+	display: flex;
+	justify-content: center;
 }
