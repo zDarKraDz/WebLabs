@@ -45,7 +45,7 @@ a {
 	padding: 2vw 2vw;
 }
 .interests{
-	padding-bottom: 20vw;
+	
 }
 .hobbies{
 
@@ -61,4 +61,9 @@ a {
 .img-padding{
 	padding-bottom: 1vw;
 	padding-top: 1vw;
+}
+.button{
+	display: flex;
+	justify-content: center;
+	margin-top: 5vw;
 }
