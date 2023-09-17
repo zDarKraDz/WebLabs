@@ -13,11 +13,17 @@ body{
 }
 .font{
 	font-size: 32px;
+	
 }
+
 a {
     text-decoration: underline;
     text-decoration: none;
     color: #00835A;
+    text-shadow: 1px 0 1px #000, 
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
 }
 .photo{
 	display: flex;
@@ -71,6 +77,12 @@ a {
 	width: 35vw;
 	height: 25vw;
 	border-radius: 26px;
+	animation-name: Appearance;
+  	animation-duration: 5s;
+}
+img:hover{
+	border: 3px solid #65994C; /* Параметры рамки */
+    border-radius: 10px; /* Радиус скругления */
 }
 .img-padding{
 	padding-bottom: 1vw;
