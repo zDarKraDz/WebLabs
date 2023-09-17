@@ -1,10 +1,15 @@
 body{
 	background-color: #D1DCB2;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 .container{
-	width: 1680px;
+	width: 100%;
+	max-width: 1680px;
 	margin:0 auto;
 	padding: 0;
+	background-color: #CBDE99;
 }
 .font{
 	font-size: 32px;
@@ -14,25 +19,29 @@ a {
     text-decoration: none;
     color: #00835A;
 }
-.main-paddings{
-	padding: 2vw;
-}
 .photo{
 	display: flex;
-	justify-content: right;
+	justify-content: left;
+  	animation-name: Appearance;
+  	animation-duration: 5s;
 }
 .photo-size{
-	width: 380px;
-	height: 420px;
+	width: 20vw;
+	height: 22vw;
+	border-radius: 10px;
+  	animation-name: Appearance;
+  	animation-duration: 5s;
 }
 .P-borders{
-	width: 380px;
-	height: 420px;
+	width: 20vw;
+	height: 22vw;
 	padding: 0.5vw
 }
 .grid{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	max-width: 1600px;
+	width: 92vw;
 }
 .borders{
 	border: 3px solid black;
@@ -61,6 +70,7 @@ a {
 .img-size{
 	width: 35vw;
 	height: 25vw;
+	border-radius: 26px;
 }
 .img-padding{
 	padding-bottom: 1vw;
@@ -71,8 +81,28 @@ a {
 	justify-content: center;
 	margin-top: 3vw;
 	width: 100px;
+	background-color: #CBDE99;
 }
 .center{
 	display: flex;
 	justify-content: center;
+}
+@-webkit-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
